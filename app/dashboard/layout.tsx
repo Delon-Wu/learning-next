@@ -1,4 +1,10 @@
 import SideNav from "@/app/ui/dashboard/sidenav";
+import { Metadata } from "next";
+
+// 覆盖全局的元数据
+export const metadata: Metadata = {
+  title: "Invoices"
+}
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
