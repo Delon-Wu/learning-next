@@ -8,7 +8,7 @@ import postgres from 'postgres';
 const sql = postgres(process.env.PROGRESS_URL!, { ssl: "require" });
 
 type User = {
-  passwoar: string;
+  password: string;
   email: string;
 }
 async function getUser(email: string): Promise<User | null> {
